@@ -1,0 +1,33 @@
+# Secrets — never commit (except the placeholder template)
+.env
+.env.*
+!.env.example
+secrets/
+credentials/
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Local state
+.DS_Store
+Thumbs.db
+*.tfstate
+*.tfstate.*
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+
+# DeepEval cache and results
+.deepeval/
+
+# ChromaDB local persistence
+chroma_db/
